@@ -1,0 +1,41 @@
+﻿@model WashCar.Models.Recibo
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h1>Detalhes</h1>
+
+<div>
+    <h4>Recibo</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IDCliente)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IDCliente)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IDCarro)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IDCarro)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IDFuncionario)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IDFuncionario)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IDLavagem)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IDLavagem)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IDRecibo"><img src="~/icones/icones/Edit.png" width="20" height="20"></a>|
+    <a asp-action="Index"><img src="~/icones/icones/Voltar.png" width="20" height="20"></a>

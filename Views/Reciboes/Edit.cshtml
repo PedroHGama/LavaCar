@@ -1,0 +1,49 @@
+﻿@model WashCar.Models.Recibo
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Editar</h1>
+
+<h4>Recibo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IDRecibo" />
+            <div class="form-group">
+                <label asp-for="IDCliente" class="control-label"></label>
+                <input asp-for="IDCliente" class="form-control" />
+                <span asp-validation-for="IDCliente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IDCarro" class="control-label"></label>
+                <input asp-for="IDCarro" class="form-control" />
+                <span asp-validation-for="IDCarro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IDFuncionario" class="control-label"></label>
+                <input asp-for="IDFuncionario" class="form-control" />
+                <span asp-validation-for="IDFuncionario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IDLavagem" class="control-label"></label>
+                <input asp-for="IDLavagem" class="form-control" />
+                <span asp-validation-for="IDLavagem" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index"><img src="~/icones/icones/Voltar.png" width="20" height="20"></a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
