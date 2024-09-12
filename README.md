@@ -37,5 +37,5 @@ Um vídeo demonstrativo pode ser visto [aqui]().
 Laura Silva.
 
 
-## 🧑Autor
->Pedro Gama
+## 🧑 Autor
+>[@PedroHGama](https://www.github.com/pedrohgama)
